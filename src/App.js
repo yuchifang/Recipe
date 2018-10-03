@@ -19,9 +19,9 @@ class App extends Component {
     
     const data = await api_call.json();
     this.setState({ recipes: data.recipes });
-    console.log(this.state.recipes);
-    // console.log(data);
-    // console.log(api_call);
+    console.log(666,this.state.recipes);
+     console.log(data);
+     console.log(api_call);
   }
   componentDidMount=()=>{
     const json=localStorage.getItem("recipes");
